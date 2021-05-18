@@ -1,6 +1,6 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
+import { StyleSheet } from 'react-native';
+import { BNavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 //import screen
 import Home from '../screens/Home';
@@ -11,10 +11,13 @@ import Shopping from '../screens/Shopping';
 
 //import vector icon
 import IconHome from 'react-native-vector-icons/Entypo';
+import IconShopping from 'react-native-vector-icons/Entypo';
+import IconAccount from 'react-native-vector-icons/MaterialCommunityIcons';
+import IconFavo from 'react-native-vector-icons/MaterialIcons';
 
 const Tab = createBottomTabNavigator();
 
-function myTabs() {
+function MyTabs() {
     <Tab.Navigator
         tabBarOptions={{
             activeTintColor: "#fc5c65",
@@ -61,9 +64,9 @@ function myTabs() {
 }
 export default function BottomTabs() {
     return (
-        <NavigationContainer>
+        <BNavigationContainer>
             <MyTabs></MyTabs>
-        </NavigationContainer>
+        </BNavigationContainer>
     )
 }
 
