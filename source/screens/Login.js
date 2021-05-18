@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import { 
     StyleSheet, 
     Text, 
@@ -6,8 +6,8 @@ import {
     TouchableOpacity,
     TextInput,
     Image,
-} from 'react-native'
-
+} from 'react-native';
+import BottomTabs from '../BottomTabs/BottomTabs';
 export default function Login({navigation}) {
     return (
         <View style={styles.container}>
