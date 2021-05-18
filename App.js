@@ -6,6 +6,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import Login from './source/screens/Login';
 import Home from './source/screens/Home';
 import Account from './source/screens/Account';
+import BottomTabs from './source/BottomTabs/BottomTabs';
 
 const Stack = createStackNavigator();
 export default function App() {
@@ -15,6 +16,11 @@ export default function App() {
         <Stack.Screen
           name="Login"
           component={Login}
+          options={{ title: "", headerShown: false }}
+        />
+        <Stack.Screen
+          name="BottomTabs"
+          component={BottomTabs}
           options={{ title: "", headerShown: false }}
         />
         <Stack.Screen
