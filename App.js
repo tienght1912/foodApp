@@ -23,7 +23,7 @@ export default function App() {
           component={BottomTabs}
           options={{ title: "", headerShown: false }}
         />
-        <Stack.Screen
+        {/* <Stack.Screen
           name="Home"
           component={Home}
           options={{ title: "", headerShown: false }}
@@ -32,7 +32,7 @@ export default function App() {
           name="Account"
           component={Account}
           options={{ title: "", headerShown: false }}
-        />
+        /> */}
       </Stack.Navigator>
     </NavigationContainer>
   );
